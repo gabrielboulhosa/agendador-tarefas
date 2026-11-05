@@ -1,6 +1,7 @@
 package com.boulhosa.agendadortarefas.business.dtos;
 
 import com.boulhosa.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -17,12 +18,15 @@ public class TarefaDTO {
 
     private String descricao;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataCriacao;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataEvento;
 
     private String emailUsuario;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataAlteracao;
 
     private StatusNotificacaoEnum statusNotificacaoEnum;
