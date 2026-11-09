@@ -1,12 +1,10 @@
 package com.boulhosa.agendadortarefas.infrastructure.security;
 
-import com.boulhosa.agendadortarefas.business.UsuarioDTO;
+import com.boulhosa.agendadortarefas.business.dtos.UsuarioDTO;
 import com.boulhosa.agendadortarefas.infrastructure.client.UsuarioClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service

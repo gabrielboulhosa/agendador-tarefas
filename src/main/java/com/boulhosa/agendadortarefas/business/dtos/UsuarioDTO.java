@@ -1,8 +1,6 @@
-package com.boulhosa.agendadortarefas.business;
+package com.boulhosa.agendadortarefas.business.dtos;
 
 import lombok.*;
-
-import java.util.List;
 
 @Getter
 @Setter
