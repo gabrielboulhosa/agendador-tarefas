@@ -47,6 +47,8 @@ public class TarefaController {
         return ResponseEntity.ok(tarefaService.alteraStatus(status, id));
     }
 
+    // teste
+
     @PutMapping
     public ResponseEntity<TarefaDTO> alterarTarefa(@RequestParam("id") String id,
                                                    @RequestBody TarefaDTO tarefaDTO){
